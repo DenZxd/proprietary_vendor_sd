@@ -1,0 +1,9 @@
+DefaultVendor= 0x12d1
+DefaultProduct=0x1001
+
+# Huawei E169
+
+TargetClass=0xff
+
+HuaweiMode=1
+

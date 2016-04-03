@@ -1,0 +1,10 @@
+DefaultVendor= 0x106c
+DefaultProduct=0x3b06
+
+# UTStarcom UM185E (distributor "Alltel")
+
+TargetVendor=  0x106c
+TargetProduct= 0x3717
+
+MessageContent="55534243b82e238c24000000800008ff020000000000000000000000000000"
+

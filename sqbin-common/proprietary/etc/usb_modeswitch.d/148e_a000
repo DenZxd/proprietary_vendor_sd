@@ -1,0 +1,9 @@
+DefaultVendor= 0x148e
+DefaultProduct=0xa000
+
+# Sequans SQN1210/SQN1220 (generic chipsets)
+
+TargetClass=0x02
+
+SequansMode=1
+

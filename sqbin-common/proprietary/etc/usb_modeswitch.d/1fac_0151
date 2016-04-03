@@ -1,0 +1,8 @@
+DefaultVendor= 0x1fac
+DefaultProduct=0x0151
+
+# Franklin Wireless U600
+
+TargetClass=0xff
+
+Configuration=2

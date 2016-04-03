@@ -1,0 +1,9 @@
+DefaultVendor= 0x16d8
+DefaultProduct=0x700a
+
+# C-motech CHU-629S
+
+TargetClass=0xff
+
+MessageContent="55534243123456782400000080000dfe524445564348473d4e444953000000"
+

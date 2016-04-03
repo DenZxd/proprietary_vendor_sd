@@ -1,0 +1,10 @@
+DefaultVendor= 0x1ee8
+DefaultProduct=0x004a
+
+# Onda MDC655
+
+TargetVendor=  0x1ee8
+TargetProduct= 0x0049
+
+MessageContent="555342431234567800000000000010ff000000000000000000000000000000"
+

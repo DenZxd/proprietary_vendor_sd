@@ -1,0 +1,9 @@
+DefaultVendor= 0x22f4
+DefaultProduct=0x0021
+
+# Tata Photon+
+
+TargetClass=0xff
+
+MessageContent="555342439f000000000000000000061b000000020000000000000000000000"
+

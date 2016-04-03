@@ -1,0 +1,10 @@
+DefaultVendor= 0x0fce
+DefaultProduct=0xd0cf
+
+# Sony Ericsson MD300
+
+TargetClass=0x02
+
+DetachStorageOnly=1
+Configuration=3
+

@@ -1,0 +1,9 @@
+DefaultVendor= 0x12d1
+DefaultProduct=0x1414
+
+# Huawei E180
+
+TargetClass=0xff
+
+HuaweiMode=1
+

@@ -1,0 +1,9 @@
+DefaultVendor= 0x1c9e
+DefaultProduct=0x6061
+
+# Vibe 3G Modem 
+
+TargetClass=0xff
+
+MessageContent="55534243123456780000000000000606f50402527000000000000000000000"
+
