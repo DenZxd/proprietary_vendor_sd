@@ -1,9 +1,0 @@
-DefaultVendor= 0x1fac
-DefaultProduct=0x0032
-
-# Franklin Wireless U210 (Variant)
-
-TargetClass=0xff
-
-Configuration=2
-

@@ -32,8 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/sd/sqbin-common/proprietary/bin/send_bug:system/bin/send_bug \
     vendor/sd/sqbin-common/proprietary/bin/setbcb:system/bin/setbcb \
     vendor/sd/sqbin-common/proprietary/bin/usb_modeswitch:system/bin/usb_modeswitch \
-    vendor/sd/sqbin-common/proprietary/bin/wifical.sh:system/bin/wifical.sh \    
-#   vendor/sd/sqbin-common/proprietary/etc/apns-conf.xml:system/etc/apns-conf.xml \
+    vendor/sd/sqbin-common/proprietary/bin/wifical.sh:system/bin/wifical.sh \
     vendor/sd/sqbin-common/proprietary/etc/avahi-daemon.conf:system/etc/avahi-daemon.conf \
     vendor/sd/sqbin-common/proprietary/etc/spn-conf.xml:system/etc/spn-conf.xml \
     vendor/sd/sqbin-common/proprietary/etc/firmware/fmc_ch8_1283.2.bts:system/etc/firmware/fmc_ch8_1283.2.bts \
@@ -52,16 +51,16 @@ PRODUCT_COPY_FILES += \
     vendor/sd/sqbin-common/proprietary/etc/firmware/fm_tx_ch8_1853.3.bts:system/etc/firmware/fm_tx_ch8_1853.3.bts \
     vendor/sd/sqbin-common/proprietary/etc/firmware/fm_tx_ch8_1893.2.bts:system/etc/firmware/fm_tx_ch8_1893.2.bts \
     vendor/sd/sqbin-common/proprietary/etc/firmware/fm_tx_ch8_1893.3.bts:system/etc/firmware/fm_tx_ch8_1893.3.bts \
-    vendor/sd/sqbin-common/proprietary/etc/firmware/fm_tx_init_1273.2.bts:system/etc/firmware/fm_tx_init_1273.2.bts \   
-    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_7.2.31.bts:system/etc/firmware/TIInit_7.2.31.bts \  
-    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_7.6.15.bts:system/etc/firmware/TIInit_7.6.15.bts \  
-    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts \  
-    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_11.7.27.bts:system/etc/firmware/TIInit_11.7.27.bts \  
-    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_11.8.32.bts:system/etc/firmware/TIInit_11.8.32.bts \  
-    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_12.7.27.bts:system/etc/firmware/TIInit_12.7.27.bts \  
-    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_12.8.32.bts:system/etc/firmware/TIInit_12.8.32.bts \  
-    vendor/sd/sqbin-common/proprietary/etc/firmware/TINfcInit_12.8.32.72.bts:system/etc/firmware/TINfcInit_12.8.32.72.bts \  
-#   vendor/sd/sqbin-common/proprietary/etc/firmware/TINfcInit_12.8.32.80.bts:system/etc/firmware/TINfcInit_12.8.32.80.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/fm_tx_init_1273.2.bts:system/etc/firmware/fm_tx_init_1273.2.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_7.2.31.bts:system/etc/firmware/TIInit_7.2.31.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_7.6.15.bts:system/etc/firmware/TIInit_7.6.15.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_11.7.27.bts:system/etc/firmware/TIInit_11.7.27.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_11.8.32.bts:system/etc/firmware/TIInit_11.8.32.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_12.7.27.bts:system/etc/firmware/TIInit_12.7.27.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/TIInit_12.8.32.bts:system/etc/firmware/TIInit_12.8.32.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/TINfcInit_12.8.32.72.bts:system/etc/firmware/TINfcInit_12.8.32.72.bts \
+    vendor/sd/sqbin-common/proprietary/etc/firmware/TINfcInit_12.8.32.80.bts:system/etc/firmware/TINfcInit_12.8.32.80.bts \
     vendor/sd/sqbin-common/proprietary/etc/firmware/ti-connectivity/wl128x-fw-4-mr.bin:system/etc/firmware/ti-connectivity/wl128x-fw-4-mr.bin \
     vendor/sd/sqbin-common/proprietary/etc/firmware/ti-connectivity/wl128x-fw-4-plt.bin:system/etc/firmware/ti-connectivity/wl128x-fw-4-plt.bin \
     vendor/sd/sqbin-common/proprietary/etc/firmware/ti-connectivity/wl128x-fw-4-sr.bin:system/etc/firmware/ti-connectivity/wl128x-fw-4-sr.bin \
@@ -79,26 +78,25 @@ PRODUCT_COPY_FILES += \
     vendor/sd/sqbin-common/proprietary/lib/libion_ti.so:system/lib/libion_ti.so \
     vendor/sd/sqbin-common/proprietary/lib/libmcphalgps.so:system/lib/libmcphalgps.so \
     vendor/sd/sqbin-common/proprietary/lib/libntfs-3g.so:system/lib/libntfs-3g.so \
-    vendor/sd/sqbin-common/proprietary/lib/libpng.so:system/lib/libpng.so \  
-    vendor/sd/sqbin-common/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \  
-    vendor/sd/sqbin-common/proprietary/lib/libsupllocationprovider.so:system/lib/libsupllocationprovider.so \  
-    vendor/sd/sqbin-common/proprietary/lib/libusb.so:system/lib/libusb.so \  
-    vendor/sd/sqbin-common/proprietary/lib/libxml2.so:system/lib/libxml2.so \  
-    vendor/sd/sqbin-common/proprietary/lib/crda/regulatory.bin:system/lib/crda/regulatory.bin \  
-    vendor/sd/sqbin-common/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \  
-    vendor/sd/sqbin-common/proprietary/lib/hw/audio.hdmi.omap4.so:system/lib/hw/audio.hdmi.omap4.so \  
-    vendor/sd/sqbin-common/proprietary/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \  
-    vendor/sd/sqbin-common/proprietary/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \  
-    vendor/sd/sqbin-common/proprietary/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \  
-    vendor/sd/sqbin-common/proprietary/lib/hw/lights.panda.so:system/lib/hw/lights.panda.so \  
-    vendor/sd/sqbin-common/proprietary/lib/hw/power.panda.so:system/lib/hw/power.panda.so \  
-    vendor/sd/sqbin-common/proprietary/lib/hw/sensors.panda.so:system/lib/hw/sensors.panda.so \  
-    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_0.png:system/usr/share/charger/battery_0.png \  
-    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_1.png:system/usr/share/charger/battery_1.png \  
-    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_2.png:system/usr/share/charger/battery_2.png \  
-    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_3.png:system/usr/share/charger/battery_3.png \  
-    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_4.png:system/usr/share/charger/battery_4.png \  
-#   vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_5.png:system/usr/share/charger/battery_5.png \
+    vendor/sd/sqbin-common/proprietary/lib/libpng.so:system/lib/libpng.so \
+    vendor/sd/sqbin-common/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
+    vendor/sd/sqbin-common/proprietary/lib/libsupllocationprovider.so:system/lib/libsupllocationprovider.so \
+    vendor/sd/sqbin-common/proprietary/lib/libusb.so:system/lib/libusb.so \
+    vendor/sd/sqbin-common/proprietary/lib/libxml2.so:system/lib/libxml2.so \
+    vendor/sd/sqbin-common/proprietary/lib/crda/regulatory.bin:system/lib/crda/regulatory.bin \
+    vendor/sd/sqbin-common/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
+    vendor/sd/sqbin-common/proprietary/lib/hw/audio.hdmi.omap4.so:system/lib/hw/audio.hdmi.omap4.so \
+    vendor/sd/sqbin-common/proprietary/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
+    vendor/sd/sqbin-common/proprietary/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
+    vendor/sd/sqbin-common/proprietary/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
+    vendor/sd/sqbin-common/proprietary/lib/hw/lights.panda.so:system/lib/hw/lights.panda.so \
+    vendor/sd/sqbin-common/proprietary/lib/hw/power.panda.so:system/lib/hw/power.panda.so \
+    vendor/sd/sqbin-common/proprietary/lib/hw/sensors.panda.so:system/lib/hw/sensors.panda.so \
+    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_0.png:system/usr/share/charger/battery_0.png \
+    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_1.png:system/usr/share/charger/battery_1.png \
+    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_2.png:system/usr/share/charger/battery_2.png \
+    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_3.png:system/usr/share/charger/battery_3.png \
+    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_4.png:system/usr/share/charger/battery_4.png \
+    vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_5.png:system/usr/share/charger/battery_5.png \
     vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_charge.png:system/usr/share/charger/battery_charge.png \
     vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_fail.png:system/usr/share/charger/battery_fail.png
-    

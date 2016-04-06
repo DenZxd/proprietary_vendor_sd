@@ -1,11 +1,11 @@
 #!/system/bin/sh
 #!/system/xbin/sh
  ################################################################
- # $ID: load-modules.sh Ò», 20  2ÔÂ 2012 22:14:53 +0800  mhfan $ #
+ # $ID: load-modules.sh , 20  2 2012 22:14:53 +0800  mhfan $ #
  #                                                              #
  # Description:                                                 #
  #                                                              #
- # Maintainer:  ·¶ÃÀ»Ô(MeiHui FAN)  <mhfan@ustc.edu>            #
+ # Maintainer:  (MeiHui FAN)  <mhfan@ustc.edu>            #
  #                                                              #
  # CopyLeft (c)  2012  M.H.Fan                                  #
  #   All rights reserved.                                       #
@@ -149,6 +149,7 @@ HAS_HDMI=yes
 insmod drivers/input/touchscreen/pixcir_i2c_ts.ko &
 elif test $MODEL = S7; then
 HAS_HDMI=yes
+V4L_CAMERA=yes
 insmod drivers/input/touchscreen/ft5x0x_i2c_ts.ko &
 cat /data/data/com.android.systemui/files/persist.sys.capacity > \
 /sys/devices/platform/omap/omap_i2c.1/i2c-1/1-0049/twl6030_bci/last_capacity
@@ -168,7 +169,7 @@ insmod crypto/arc4.ko &
 insmod crypto/ecb.ko &
 
 insmod drivers/hid/hid.ko
-insmod net/rfkill/rfkill.ko
+insmod net/rfkill/rfkill.ko &
 insmod net/wireless/cfg80211.ko &
 
 if test "$HAS_BT" = yes; then
@@ -200,8 +201,14 @@ insmod drivers/media/video/v4l2-int-device.ko &
 insmod drivers/media/radio/wl128x/fm_drv.ko &
 
 #insmod drivers/mfd/wl1273-core.ko
-#insmod drivers/net/wireless/wl12xx/wl12xx.ko
+#insmod drivers/net/wireless/wl12xx/wl12xx.ko &
 #insmod drivers/net/wireless/wl12xx/wl12xx_sdio.ko &
+
+#insmod /system/lib/modules/compat.ko
+#insmod /system/lib/modules/cfg80211.ko
+#insmod /system/lib/modules/mac80211.ko
+#insmod /system/lib/modules/wl12xx.ko
+
 fi
 
 #insmod net/wireless/lib80211.ko &
@@ -222,7 +229,7 @@ insmod drivers/input/misc/uinput.ko &
 insmod drivers/misc/hhcn_encrypy.ko &
 
 insmod drivers/input/misc/bma250.ko &
-insmod drivers/input/misc/mma8452.ko &
+#insmod drivers/input/misc/mma8452.ko &
 #insmod drivers/misc/sensors/mma7455.ko
 #insmod drivers/misc/sensors/mecs.ko &
 
@@ -410,6 +417,12 @@ fi
 
 test $MODEL = T15 && test ! -e /sys/bus/i2c/devices/4-0055/version &&
 (rmmod goodix_touch; insmod drivers/input/touchscreen/ssd2533.ko) &
+
+#insmod /system/lib/modules/kernel/compat/compat.ko &
+#insmod /system/lib/modules/kernel/net/wireless/cfg80211.ko &
+#insmod /system/lib/modules/kernel/net/mac80211/mac80211.ko &
+#insmod /system/lib/modules/kernel/drivers/net/wireless/wl12xx/wl12xx.ko &
+#insmod /system/lib/modules/kernel/drivers/net/wireless/wl12xx/wl12xx_sdio.ko &
 
 setprop ctl.start cryptomem
 mount -o remount,ro /system

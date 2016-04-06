@@ -1,9 +1,0 @@
-DefaultVendor= 0x230d
-DefaultProduct=0x0007
-
-# Visiontek 82GH 3G
-
-TargetClass=0xff
-
-Configuration=3
-

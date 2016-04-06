@@ -1,9 +1,0 @@
-DefaultVendor= 0x230d
-DefaultProduct=0x0101
-
-# Linktop LW272/LW273
-
-TargetClass=0xff
-
-Configuration=2
-

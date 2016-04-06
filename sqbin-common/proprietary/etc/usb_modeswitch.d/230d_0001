@@ -1,9 +1,0 @@
-DefaultVendor= 0x230d
-DefaultProduct=0x0001
-
-# Linktop LW272/LW273 (BSNL Teracom)
-
-TargetClass=0xff
-
-Configuration=3
-
