@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/sd/sqsgx-common/proprietary/etc/powervr.ini:system/etc/powervr.ini \
-    vendor/sd/sqsgx-common/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/sd/sqsgx-common/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/sd/sqsgx-common/proprietary/vendor/bin/pvrsrvinit:system/vendor/bin/pvrsrvinit \
     vendor/sd/sqsgx-common/proprietary/vendor/bin/pvrsrvctl_SGX540_120:system/vendor/bin/pvrsrvctl_SGX540_120 \
@@ -49,5 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/sd/sqsgx-common/proprietary/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
     vendor/sd/sqsgx-common/proprietary/vendor/lib/egl/libGLESv2_POWERVR_SGX544_112.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX544_112.so \
     vendor/sd/sqsgx-common/proprietary/vendor/lib/hw/gralloc.omap4430.so:system/vendor/lib/hw/gralloc.omap4430.so \
-    vendor/sd/sqsgx-common/proprietary/vendor/lib/hw/gralloc.omap4470.so:system/vendor/lib/hw/gralloc.omap4470.so \
-    vendor/sd/sqsgx-common/proprietary/vendor/lib/hw/hwcomposer.omap4.so:system/vendor/lib/hw/hwcomposer.omap4.so
+    vendor/sd/sqsgx-common/proprietary/vendor/lib/hw/gralloc.omap4470.so:system/vendor/lib/hw/gralloc.omap4470.so
+
+# vendor/sd/sqsgx-common/proprietary/vendor/lib/hw/hwcomposer.omap4.so:system/vendor/lib/hw/hwcomposer.omap4.so

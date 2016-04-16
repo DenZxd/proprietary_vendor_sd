@@ -67,7 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/sd/sqbin-common/proprietary/etc/firmware/ti-connectivity/wl1271-nvs.bin:system/etc/firmware/ti-connectivity/wl1271-nvs.bin \
     vendor/sd/sqbin-common/proprietary/etc/wifi/RFMD_S_3.5.ini:system/etc/wifi/RFMD_S_3.5.ini \
     vendor/sd/sqbin-common/proprietary/etc/wifi/TQS_S_2.6.ini:system/etc/wifi/TQS_S_2.6.ini \
-    vendor/sd/sqbin-common/proprietary/lib/libedid.so:system/lib/libedid.so \
     vendor/sd/sqbin-common/proprietary/lib/libexfat.so:system/lib/libexfat.so \
     vendor/sd/sqbin-common/proprietary/lib/libfmradio.so:system/lib/libfmradio.so \
     vendor/sd/sqbin-common/proprietary/lib/libft2.so:system/lib/libft2.so \
@@ -75,11 +74,9 @@ PRODUCT_COPY_FILES += \
     vendor/sd/sqbin-common/proprietary/lib/libgps.so:system/lib/libgps.so \
     vendor/sd/sqbin-common/proprietary/lib/libgpsservices.so:system/lib/libgpsservices.so \
     vendor/sd/sqbin-common/proprietary/lib/libhhtech-ril.so:system/lib/libhhtech-ril.so \
-    vendor/sd/sqbin-common/proprietary/lib/libion_ti.so:system/lib/libion_ti.so \
     vendor/sd/sqbin-common/proprietary/lib/libmcphalgps.so:system/lib/libmcphalgps.so \
     vendor/sd/sqbin-common/proprietary/lib/libntfs-3g.so:system/lib/libntfs-3g.so \
     vendor/sd/sqbin-common/proprietary/lib/libpng.so:system/lib/libpng.so \
-    vendor/sd/sqbin-common/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
     vendor/sd/sqbin-common/proprietary/lib/libsupllocationprovider.so:system/lib/libsupllocationprovider.so \
     vendor/sd/sqbin-common/proprietary/lib/libusb.so:system/lib/libusb.so \
     vendor/sd/sqbin-common/proprietary/lib/libxml2.so:system/lib/libxml2.so \
@@ -100,3 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_5.png:system/usr/share/charger/battery_5.png \
     vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_charge.png:system/usr/share/charger/battery_charge.png \
     vendor/sd/sqbin-common/proprietary/usr/share/charger/battery_fail.png:system/usr/share/charger/battery_fail.png
+
+# vendor/sd/sqbin-common/proprietary/lib/libion_ti.so:system/lib/libion_ti.so \
+# vendor/sd/sqbin-common/proprietary/lib/libedid.so:system/lib/libedid.so \
+# vendor/sd/sqbin-common/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
